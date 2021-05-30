@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FragmentMap">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="155dp"
+        android:layout_height="195dp"
+        android:background="@null"
+        android:src="@drawable/lion_head_sleep"
+        app:layout_constraintBottom_toBottomOf="@+id/map_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map_view"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="495dp"
+        android:layout_height="541dp"
+        android:src="@drawable/map_text_helper"
+        app:layout_constraintBottom_toBottomOf="@+id/map_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map_view"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="220dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="92dp"
+        android:background="@null"
+        android:src="@drawable/lion_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map_view"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <ImageButton
+        android:id="@+id/mapButton"
+        android:layout_width="90dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="240dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vue_maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

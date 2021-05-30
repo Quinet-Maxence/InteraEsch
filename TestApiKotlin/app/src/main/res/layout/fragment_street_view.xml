@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StreetViewFragment">
+
+
+    <fragment
+        android:id="@+id/googleMapsStreetView"
+        android:name="com.google.android.gms.maps.SupportStreetViewPanoramaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-44dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="159dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="184dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lion_head_sleep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/googleMapsStreetView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="236dp"
+        android:layout_height="218dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lion_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/googleMapsStreetView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/googleMapsStreetView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="663dp"
+        android:layout_height="405dp"
+        android:src="@drawable/streetview_text_helper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

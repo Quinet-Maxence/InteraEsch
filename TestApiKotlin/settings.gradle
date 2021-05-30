@@ -1,0 +1,3 @@
+include ':streetviewmarker'
+include ':app'
+rootProject.name = "TestApiKotlin"

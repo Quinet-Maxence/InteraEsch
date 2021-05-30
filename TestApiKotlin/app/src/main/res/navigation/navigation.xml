@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.testapikotlin.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.testapikotlin.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact"/>
+
+    <fragment
+        android:id="@+id/streetViewFragment"
+        android:name="com.example.testapikotlin.StreetViewFragment"
+        android:label="fragment_street_view"
+        tools:layout="@layout/fragment_street_view"/>
+
+    <fragment
+        android:id="@id/mapFragment"
+        android:name="com.example.testapikotlin.FragmentMap"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map"/>
+
+</navigation>

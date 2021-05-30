@@ -1,0 +1,4 @@
+<resources>
+    <item name="FPImageLoader" type="drawable">@drawable/logointeraeschprout</item>
+    <item name="HomeDesign" type="drawable">@drawable/home_design</item>
+</resources>
